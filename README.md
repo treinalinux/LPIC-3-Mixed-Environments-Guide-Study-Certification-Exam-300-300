@@ -95,19 +95,20 @@ Key Knowledge Areas:
 The following is a partial list of the used files, terms and utilities:
 
 - [ ] smb.conf
-- [ ] security
-- [ ] server role
-- [ ] server string
-- [ ] server services
-- [ ] tls enabled
-- [ ] tls keyfile
-- [ ] tls certfile
-- [ ] tls dh params file
-- [ ] tls cafile
-- [ ] config backend
-- [ ] registry shares
-- [ ] include
-- [ ] vfs objects
+ - [ ] security
+ - [ ] server role
+ - [ ] server string
+ - [ ] server services
+ - [ ] tls enabled
+ - [ ] tls keyfile
+ - [ ] tls certfile
+ - [ ] tls dh params file
+ - [ ] tls cafile
+ - [ ] config backend
+ - [ ] registry shares
+ - [ ] include
+ - [ ] vfs objects
+
 - [ ] samba-regedit
 - [ ] HKLM\Software\Samba\
 - [ ] REG_SZ, REG_MULTI_SZ
