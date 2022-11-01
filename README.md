@@ -347,21 +347,21 @@ Candidates should be able to join a Samba server into an existing Active Directo
     - [ ] template homedir
     - [ ] allow trusted domains
 
-- [ ] idmap_ad
-- [ ] idmap_autorid
-- [ ] idmap_ldap
-- [ ] idmap_rfc2307
-- [ ] idmap_rid
-- [ ] idmap_tdb
-- [ ] idmap_tdb2
-- [ ] net ads (including relevant subcommands)
-- [ ] /etc/nsswitch.conf
-- [ ] /etc/pam.conf
-- [ ] /etc/pam.d/
-- [ ] libnss_winbind
-- [ ] libpam_winbind
-- [ ] getent
-- [ ] wbinfo
+- [ ] [idmap_ad](https://www.samba.org/samba/docs/current/man-html/idmap_ad.8.html)
+- [ ] [idmap_autorid](https://www.samba.org/samba/docs/current/man-html/idmap_autorid.8.html)
+- [ ] [idmap_ldap](https://www.samba.org/samba/docs/current/man-html/idmap_ldap.8.html)
+- [ ] [idmap_rfc2307](https://www.samba.org/samba/docs/current/man-html/idmap_rfc2307.8.html)
+- [ ] [idmap_rid](https://www.samba.org/samba/docs/current/man-html/idmap_rid.8.html)
+- [ ] [idmap_tdb](https://www.samba.org/samba/docs/current/man-html/idmap_tdb.8.html)
+- [ ] [idmap_tdb2](https://www.samba.org/samba/docs/current/man-html/idmap_tdb2.8.html)
+- [ ] [net ads](https://www.samba.org/samba/docs/current/man-html/net.8.html) (including relevant subcommands)
+- [ ] /etc/[nsswitch.conf](https://manpages.ubuntu.com/manpages/focal/pt/man5/nsswitch.conf.5.html)
+- [ ] /etc/[pam.conf](https://man7.org/linux/man-pages/man5/pam.d.5.html)
+- [ ] /etc/[pam.d](https://linux.die.net/man/5/pam.d)/
+- [ ] [libnss_winbind](https://wiki.samba.org/index.php/Configuring_Winbindd_on_a_Samba_AD_DC)
+- [ ] [libpam_winbind](https://www.samba.org/samba/docs/current/man-html/pam_winbind.8.html)
+- [ ] [getent](https://man7.org/linux/man-pages/man1/getent.1.html)
+- [ ] [wbinfo](https://www.samba.org/samba/docs/current/man-html/wbinfo.1.html)
  
 
 ### 302.5 Samba Local User Management (weight: 2)
