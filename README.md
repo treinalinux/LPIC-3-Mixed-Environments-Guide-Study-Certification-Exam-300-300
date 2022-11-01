@@ -53,7 +53,7 @@ About Objective Weights: Each objective is assigned a weighting value. The weigh
 
 Candidates should understand the essential concepts of Samba, including the various Samba server processes and networking protocols used by Samba when acting in various roles. Samba version 4.8 or higher is covered.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Understand the roles of the various Samba daemons and components
 - [ ] Understand key issues regarding heterogeneous networks
@@ -80,7 +80,7 @@ Partial list of the used files, terms and utilities:
 
 Candidates should be able to configure the Samba daemons.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Manage Samba server file-based configuration
 - [ ] Manage of Samba server registry-based configuration
@@ -92,7 +92,7 @@ Key Knowledge Areas:
 - [ ] Understand Windows tools used to configure a Samba Server
 
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] smb.conf
  - [ ] security
@@ -123,14 +123,13 @@ The following is a partial list of the used files, terms and utilities:
 
 ### 301.3 Regular Samba Maintenance (weight: 2)
 
-**Weight**
+**Weight 2**
 
-2
-Description
+**Description**
 
 Candidates should know the various tools and utilities that are part of a Samba installation.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Start and stop Samba services on domain controllers and file servers
 - [ ] Monitor and interact with running Samba daemons
@@ -140,7 +139,7 @@ Key Knowledge Areas:
 - [ ] Understand the impact of virtualization on Active Directory domain controllers
 
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] systemctl
 - [ ] smbcontrol (including relevant message types)
@@ -154,14 +153,13 @@ The following is a partial list of the used files, terms and utilities:
 
 ### 301.4 Troubleshooting Samba (weight: 3)
 
-**Weight**
+**Weight 3**
 
-3
-Description
+**Description**
 
 Candidates should be able to analyze and troubleshoot Samba issues. This includes accessing and modifying the LDAP content of a Samba server hosting an Active directory as well as working with trivial database files. Furthermore, candidates should be able to create a renamed clone of an existing Active Directory for debugging.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Configure Samba logging, including setting log levels for specific debug classes and client-specific logging
 - [ ] Query and modify the Samba password database
@@ -176,7 +174,7 @@ Key Knowledge Areas:
 - [ ] Use rpcclient to query information on a Samba server
 
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] smb.conf:
     - [ ] log level
@@ -200,18 +198,17 @@ The following is a partial list of the used files, terms and utilities:
 - [ ] rpcclient
  
 
-Topic 302: Samba and Active Directory Domains
+## Topic 302: Samba and Active Directory Domains
 
 ### 302.1 Samba as Active Directory Domain Controller (weight: 5)
 
-**Weight**
+**Weight 5**
 
-5
-Description
+**Description**
 
 Candidates should be able to configure Samba as an Active Directory domain controller. This includes managing an Active Directory domain.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Understand the concepts of Active Directory
 - [ ] Understand the principles of the network services used by Active Directory (i.e. DNS, Kerberos, NTP and LDAP and CIFS and MS-RPC)
@@ -230,7 +227,7 @@ Key Knowledge Areas:
 - [ ] Awareness of Windows NT4 domains
 
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] smb.conf:
     - [ ] server role
@@ -250,14 +247,13 @@ The following is a partial list of the used files, terms and utilities:
 
 ### 302.2 Active Directory Name Resolution (weight: 2)
 
-**Weight**
+**Weight 2**
 
-2
-Description
+**Description**
 
 Candidates should be familiar with the internal DNS server of Samba.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Understand and manage DNS for Samba as an AD domain controller
 - [ ] Manage DNS records in Samba DNS
@@ -268,7 +264,7 @@ Key Knowledge Areas:
 - [ ] Awareness of NetBIOS name resolution and WINS
 
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] smb.conf:
     - [ ] dns forwarder
@@ -284,14 +280,13 @@ The following is a partial list of the used files, terms and utilities:
 
 ### 302.3 Active Directory User Management (weight: 4)
 
-**Weight**
+**Weight 4**
 
-4
-Description
+**Description**
 
 Candidates should be able to manage user and group accounts on a standalone server and in a Samba based Active Directory.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Manage user accounts and user group for standalone servers and Samba AD
 - [ ] Knowledge of user account management tools
@@ -308,7 +303,7 @@ Key Knowledge Areas:
 - [ ] Awareness of LDAP Account Manager
 
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] samba-tool user (including relevant subcommands)
 - [ ] samba-tool group (including relevant subcommands)
@@ -323,21 +318,20 @@ The following is a partial list of the used files, terms and utilities:
 
 ### 302.4 Samba Domain Membership (weight: 4)
 
-**Weight**
+**Weight 4**
 
-4
-Description
+**Description**
 
 Candidates should be able to join a Samba server into an existing Active Directory domain and authorize domain users to use the server. This includes installing and configuring the Winbind service.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Join Samba to an existing AD domain
 - [ ] Configure Winbind service, including ID mapping
 - [ ] Understand and configure Winbind ID mapping, including various mapping backends
 - [ ] Configure PAM and NSS to use Winbind
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] smb.conf:
     - [ ] security
@@ -372,14 +366,13 @@ The following is a partial list of the used files, terms and utilities:
 
 ### 302.5 Samba Local User Management (weight: 2)
 
-**Weight**
+**Weight 2**
 
-2
-Description
+**Description**
 
 Candidates should be able to create and manage local user accounts on a stand alone Samba server.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Setup a local password database
 - [ ] Perform password synchronization
@@ -387,7 +380,7 @@ Key Knowledge Areas:
 - [ ] Convert between Samba passdb backends
 
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] smb.conf:
     - [ ] passdb backend
@@ -399,18 +392,17 @@ The following is a partial list of the used files, terms and utilities:
 - [ ] pdbedit
  
 
-Topic 303: Samba Share Configuration
+## Topic 303: Samba Share Configuration
 
 ### 303.1 File Share Configuration (weight: 4)
 
-**Weight**
+**Weight 4**
 
-4
-Description
+**Description**
 
 Candidates should be able to create and configure CIFS file shares in Samba.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Create and configure CIFS file shares
 - [ ] Manage Samba share access configuration parameters
@@ -422,7 +414,7 @@ Key Knowledge Areas:
 - [ ] Awareness of existing VFS modules and their general functionality, including modules to support audit logs and snapshots / shadow copies
 
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] smb.conf:
     - [ ] path
@@ -450,14 +442,13 @@ The following is a partial list of the used files, terms and utilities:
 
 ### 303.2 File Share Security (weight: 3)
 
-**Weight**
+**Weight 3**
 
-3
-Description
+**Description**
 
 Candidates should understand file permissions on CIFS shares and on a Linux file system.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Enforce ownership and permissions of files and directories
 - [ ] Manage ACLs for shares and folders
@@ -467,7 +458,7 @@ Key Knowledge Areas:
 - [ ] Configure encryption of CIFS connections
 
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] smb.conf
     - [ ] create mask / create mode
@@ -498,20 +489,19 @@ The following is a partial list of the used files, terms and utilities:
 
 ### 303.3 DFS Share Configuration (weight: 1)
 
-**Weight**
+**Weight 1**
 
-1
-Description
+**Description**
 
 Candidates should be able to create and manage DFS shares in Samba.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Understand DFS
 - [ ] Configure DFS shares
 
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] smb.conf:
     - [ ] host msdfs
@@ -523,14 +513,13 @@ The following is a partial list of the used files, terms and utilities:
 
 ### 303.4 Print Share Configuration (weight: 2)
 
-**Weight**
+**Weight 2**
 
-2
-Description
+**Description**
 
 Candidates should be able to create and manage print shares in Samba.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Understand Samba printing, including raw printing
 - [ ] Create and configure print shares
@@ -543,7 +532,7 @@ Key Knowledge Areas:
 - [ ] Manage GPO options for trusted print servers
 - [ ] Awareness of spoolssd
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] smb.conf:
     - [ ] printing
@@ -562,18 +551,17 @@ The following is a partial list of the used files, terms and utilities:
 - [ ] SePrintOperatorPrivilege
  
 
-Topic 304: Samba Client Configuration
+## Topic 304: Samba Client Configuration
 
 ### 304.1 Linux Authentication Clients (weight: 5)
 
-**Weight**
+**Weight 5**
 
-5
-Description
+**Description**
 
 Candidates should be familiar with management and authentication of user accounts. This includes configuration and use of NSS, PAM, SSSD and Kerberos for both local and remote directories and authentication mechanisms as well as enforcing a password policy.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Understand and configure NSS and PAM
 - [ ] Enforce password complexity policies and periodic password changes
@@ -584,7 +572,7 @@ Key Knowledge Areas:
 - [ ] Manage local accounts through SSSD
 - [ ] Obtain and manage Kerberos tickets
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] /etc/pam.conf
 - [ ] /etc/pam.d/
@@ -614,14 +602,13 @@ The following is a partial list of the used files, terms and utilities:
 
 ### 304.2 Linux CIFS Clients (weight: 3)
 
-**Weight**
+**Weight 3**
 
-3
-Description
+**Description**
 
 Candidates should be able to use remote CIFS shares from a Linux client. This includes client-side management of CIFS credentials and managing remote ACLs and quotas.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Access remote CIFS shares from a Linux client
 - [ ] Mount remote CIFS shares on a Linux client
@@ -630,7 +617,7 @@ Key Knowledge Areas:
 - [ ] Understand and manage permissions and file ownership of remote CIFS shares
 - [ ] Understand and manage quotas on CIFS shares
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] smb.conf
 - [ ] smbclient (including relevant subcommands)
@@ -650,14 +637,13 @@ The following is a partial list of the used files, terms and utilities:
 
 ### 304.3 Windows Clients (weight: 3)
 
-**Weight**
+**Weight 3**
 
-3
-Description
+**Description**
 
 Candidates should be able to access CIFS and print shares from Windows hosts and join such hosts into an Active Directory domain. Furthermore, candidates should be able to manage Windows hosts using GPOs and access remote Windows hosts.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Understand how to set up and use Windows hosts
 - [ ] Join a Windows host to an Active Directory domain
@@ -671,7 +657,7 @@ Key Knowledge Areas:
 - [ ] Configure roaming profiles for Active Directory users
 - [ ] Configure profile folder redirects
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] smb.conf:
     - [ ] logon path
@@ -683,18 +669,17 @@ The following is a partial list of the used files, terms and utilities:
 - [ ] rdesktop
  
 
-Topic 305: Linux Identity Management and File Sharing
+## Topic 305: Linux Identity Management and File Sharing
 
 ### 305.1 FreeIPA Installation and Maintenance (weight: 2)
 
-**Weight**
+**Weight 2**
 
-2
-Description
+**Description**
 
 Candidates should be able to set up and manage a FreeIPA domain using standard settings and default services. This includes setting up replication and joining clients to the domain.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Understand the features, architecture as well as server-side and client-side components of FreeIPA
 - [ ] Install a FreeIPA server
@@ -703,7 +688,7 @@ Key Knowledge Areas:
 - [ ] Join clients to an existing FreeIPA domain
 - [ ] Awareness of ipa-backup
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] ipa-server-install
 - [ ] ipa-replica-prepare
@@ -714,14 +699,13 @@ The following is a partial list of the used files, terms and utilities:
 
 ### 305.2 FreeIPA Entity Management (weight: 4)
 
-**Weight**
+**Weight 4**
 
-4
-Description
+**Description**
 
 Candidates should be able manage users, hosts and services in a FreeIPA domain.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Manage user accounts and groups
 - [ ] Manage hosts, hostgroups and services
@@ -731,7 +715,7 @@ Key Knowledge Areas:
 - [ ] Awareness of the FreeIPA CA
 
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] ipa (including relevant user-, stageuser- and group- and idview- subcommands)
 - [ ] ipa (including relevant host-, hostgroup-, service- and getkeytab subcommands)
@@ -742,14 +726,13 @@ The following is a partial list of the used files, terms and utilities:
 
 ### 305.3 FreeIPA Active Directory Integration (weight: 2)
 
-**Weight**
+**Weight 2**
 
-2
-Description
+**Description**
 
 Candidates should be able to set up a cross-forest trust between a FreeIPA and an Active Directory domain.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Understand and set up FreeIPA and Active Directory integration using Kerberos cross-realm trusts
 - [ ] Configure ID ranges in FreeIPA
@@ -758,22 +741,21 @@ Key Knowledge Areas:
 - [ ] Awareness of replication based FreeIPA and Active Directory integration
 
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
-ipa-adtrust-install
-ipa (including relevant trust-*, idrange-* and group-* subcommands)
+- [ ] ipa-adtrust-install
+- [ ] ipa (including relevant trust-*, idrange-* and group-* subcommands)
  
 
 ### 305.4 Network File System (weight: 3)
 
-**Weight**
+**Weight 3**
 
-3
-Description
+**Description**
 
 Candidates should be able to use NFSv4. This includes understanding ID mapping, NFSv4 ACLs and Kerberos authentication for NFS.
 
-Key Knowledge Areas:
+**Key Knowledge Areas**:
 
 - [ ] Understand major NFSv4 features
 - [ ] Configure and manage an NFSv4 server and clients
@@ -782,7 +764,7 @@ Key Knowledge Areas:
 - [ ] Use Kerberos for for NFSv4 authentication  
 
 
-The following is a partial list of the used files, terms and utilities:
+**The following is a partial list of the used files, terms and utilities**:
 
 - [ ] exportfs
 - [ ] /etc/exports
