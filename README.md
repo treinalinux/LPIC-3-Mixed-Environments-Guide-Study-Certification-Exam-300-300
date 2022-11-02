@@ -31,6 +31,14 @@ Languages for exam available in VUE test centers: English, Japanese
 
 ---
 
+For reader:
+
+- [Identity](https://learn.microsoft.com/pt-br/windows-server/identity/identity-and-access)
+- [Lightweight Directory Access Protocol](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/lightweight-directory-access-protocol-ldap-api)
+- [Kerberos](https://learn.microsoft.com/en-us/previous-versions/tn-archive/cc995228(v=technet.10)?redirectedfrom=MSDN#Anchor_0)
+
+---
+
 LPIC-3 Exam 300: Mixed Environments
 
  
