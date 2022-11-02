@@ -259,9 +259,149 @@ Candidates should be able to configure Samba as an Active Directory domain contr
     - [ ] log level
 
 - [ ] samba-tool domain (including relevant subcommands)
+
+    - **domain**
+        Manage Domain.
+
+    - **domain backup**
+        Create or restore a backup of the domain.
+
+    - **domain backup offline**
+        Backup (with proper locking) local domain directories into a tar file.
+
+    - **domain backup online**
+        Copy a running DC's current DB into a backup tar file.
+
+    - **domain backup rename**
+        Copy a running DC's DB to backup file, renaming the domain in the process.
+
+    - **domain backup restore**
+        Restore the domain's DB from a backup-file.
+
+    - **domain classicupgrade [options] classic_smb_conf**
+        Upgrade from Samba classic (NT4-like) database to Samba AD DC database.
+
+    - **domain dcpromo dnsdomain [DC|RODC] [options]**
+        Promote an existing domain member or NT4 PDC to an AD DC.
+
+    - **domain demote**
+        Demote ourselves from the role of domain controller.
+
+    - **domain exportkeytab keytab [options]**
+        Dumps Kerberos keys of the domain into a keytab.
+
+    - **domain info ip_address [options]**
+        Print basic info about a domain and the specified DC.
+
+    - **domain join dnsdomain [DC|RODC|MEMBER|SUBDOMAIN] [options]**
+        Join a domain as either member or backup domain controller.
+
+    - **domain level show|raise options [options]**
+        Show/raise domain and forest function levels.
+
+    - **domain passwordsettings show|set options [options]**
+        Show/set password settings.
+
+    - **domain passwordsettings pso**
+        Manage fine-grained Password Settings Objects (PSOs).
+
+    - **domain passwordsettings pso apply pso-name user-or-group-name [options]**
+        Applies a PSO's password policy to a user or group.
+
+    - **domain passwordsettings pso create pso-name precedence [options]**
+        Creates a new Password Settings Object (PSO).
+
+    - **domain passwordsettings pso delete pso-name [options]**
+        Deletes a Password Settings Object (PSO).
+
+    - **domain passwordsettings pso list [options]**
+        Lists all Password Settings Objects (PSOs).
+
+    - **domain passwordsettings pso set pso-name [options]**
+        Modifies a Password Settings Object (PSO).
+
+    - **domain passwordsettings pso show user-name [options]**
+        Displays a Password Settings Object (PSO).
+
+    - **domain passwordsettings pso show-user pso-name [options]**
+        Displays the Password Settings that apply to a user.
+
+    - **domain passwordsettings pso unapply pso-name user-or-group-name [options]**
+        Updates a PSO to no longer apply to a user or group.
+
+    - **domain provision**
+        Promote an existing domain member or NT4 PDC to an AD DC.
+
+    - **domain trust**
+        Domain and forest trust management.
+
+    - **domain trust create DOMAIN options [options]**
+        Create a domain or forest trust.
+
+    - **domain trust delete DOMAIN options [options]**
+        Delete a domain trust.
+
+    - **domain trust list options [options]**
+        List domain trusts.
+
+    - **domain trust namespaces [DOMAIN] options [options]**
+        Manage forest trust namespaces.
+
+    - **domain trust show DOMAIN options [options]**
+        Show trusted domain details.
+
+    - **domain trust validate DOMAIN options [options]**
+        Validate a domain trust.
+
+
+
 - [ ] samba-tool fsmo (including relevant subcommands)
+
+    - **fsmo**
+        Manage Flexible Single Master Operations (FSMO).
+
+    - **fsmo seize [options]**
+        Seize the role.
+
+    - **fsmo show**
+        Show the roles.
+
+    - **fsmo transfer [options]**
+           Transfer the role.
+
+
 - [ ] samba-tool drs (including relevant subcommands)
+
+    - **drs**
+        Manage Directory Replication Services (DRS).
+
+    - **drs bind**
+        Show DRS capabilities of a server.
+
+    - **drs kcc**
+        Trigger knowledge consistency center run.
+
+    - **drs options**
+        Query or change options for NTDS Settings object of a domain controller.
+
+    - **drs replicate destination_DC source_DC NC [options]**
+        Replicate a naming context between two DCs.
+
+    - **drs showrepl**
+           Show replication status. The [--json] option results in JSON output, and with the [--summary] option produces very
+           little output when the replication status seems healthy.
+
 - [ ] samba-tool sites (including relevant subcommands)
+
+    - **sites**
+        Manage sites.
+
+    - **sites create site [options]**
+        Create a new site.
+
+    - **sites remove site [options]**
+           Delete an existing site.
+
 - [ ] rsync
 - [ ] rsync.conf
 - [ ] /var/lib/samba/sysvol
