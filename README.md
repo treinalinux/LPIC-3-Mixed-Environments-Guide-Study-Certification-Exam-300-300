@@ -294,6 +294,9 @@ Candidates should be able to manage user and group accounts on a standalone serv
 - [ ] Configure password expiration and change requirements
 - [ ] Manage password policies and password setting objects
 - [ ] Understand principals and their identification SID (DN, GUID)
+    - [ ] [SID](https://learn.microsoft.com/pt-br/windows-server/identity/ad-ds/manage/understand-security-identifiers)
+    - [ ] [DN](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/distinguished-names)
+    - [ ] [GUID](https://learn.microsoft.com/pt-br/windows-server/identity/ad-ds/manage/understand-security-identifiers)
 - [ ] Understand User Principal Name (UPN) and User Principal Name Suffix (UPN Suffix)
 - [ ] Understand and manage Security and Distribution Groups
 - [ ] Understand and manage LDAP attributes of security principals
