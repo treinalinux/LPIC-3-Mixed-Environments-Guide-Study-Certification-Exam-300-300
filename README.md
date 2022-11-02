@@ -523,13 +523,37 @@ Candidates should be able to join a Samba server into an existing Active Directo
 - [ ] [idmap_tdb](https://www.samba.org/samba/docs/current/man-html/idmap_tdb.8.html)
 - [ ] [idmap_tdb2](https://www.samba.org/samba/docs/current/man-html/idmap_tdb2.8.html)
 - [ ] [net ads](https://www.samba.org/samba/docs/current/man-html/net.8.html) (including relevant subcommands)
+
+    - **net ads info**            Display details on remote ADS server
+    - **net ads join**            Join the local machine to ADS realm
+    - **net ads testjoin**        Validate machine account
+    - **net ads leave**           Remove the local machine from ADS
+    - **net ads status**      Display machine account details
+    - **net ads user**            List/modify users
+    - **net ads group**           List/modify groups
+    - **net ads dns**             Issue dynamic DNS update
+    - **net ads password**        Change user passwords
+    - **net ads changetrustpw**   Change trust account password
+    - **net ads printer**         List/modify printer entries
+    - **net ads search**          Issue LDAP search using filter
+    - **net ads dn**              Issue LDAP search by DN
+    - **net ads sid**             Issue LDAP search by SID
+    - **net ads workgroup**       Display workgroup name
+    - **net ads lookup**          Perform CLDAP query on DC
+    - **net ads keytab**          Manage local keytab file
+    - **net ads setspn**          Manage Service Principal Names (SPN)s
+    - **net ads gpo**             Manage group policy objects
+    - **net ads kerberos**        Manage kerberos keytab
+    - **net ads enctypes**        List/modify supported encryption types
+
+
 - [ ] /etc/[nsswitch.conf](https://manpages.ubuntu.com/manpages/focal/pt/man5/nsswitch.conf.5.html)
 - [ ] /etc/[pam.conf](https://man7.org/linux/man-pages/man5/pam.d.5.html)
 - [ ] /etc/[pam.d](https://linux.die.net/man/5/pam.d)/
 - [ ] [libnss_winbind](https://wiki.samba.org/index.php/Configuring_Winbindd_on_a_Samba_AD_DC)
 - [ ] [libpam_winbind](https://www.samba.org/samba/docs/current/man-html/pam_winbind.8.html)
 - [ ] [getent](https://man7.org/linux/man-pages/man1/getent.1.html)
-- [ ] [wbinfo](https://www.samba.org/samba/docs/current/man-html/wbinfo.1.html)
+- [ ] [wbinfo](https://www.samba.org/samba/docs/current/man-html/wbinfo.1.html) `Query information from winbind daemon`
  
 
 ### 302.5 Samba Local User Management (weight: 2)
