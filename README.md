@@ -630,20 +630,20 @@ Candidates should be able to use remote CIFS shares from a Linux client. This in
 
 **The following is a partial list of the used files, terms and utilities**:
 
-- [ ] smb.conf
-- [ ] smbclient (including relevant subcommands)
-- [ ] mount
-- [ ] mount.cifs
-- [ ] /etc/fstab
+- [ ] smb.conf `The configuration file for the Samba suite`
+- [ ] smbclient (including relevant subcommands) `ftp-like client to access SMB/CIFS resources on servers`
+- [ ] mount `mount a filesystem`
+- [ ] mount.cifs `mount using the Common Internet File System (CIFS)`
+- [ ] /etc/fstab `static information about the filesystems`
 - [ ] pam_mount.so
 - [ ] pam_mount.conf.xml
-- [ ] cifscreds
-- [ ] getcifsacl
-- [ ] setcifsacl
-- [ ] smbcquotas
-- [ ] cifsiostat
-- [ ] smbget
-- [ ] smbtar
+- [ ] cifscreds `manage NTLM credentials in kernel keyring`
+- [ ] getcifsacl `Userspace helper to display an ACL in a security descriptor for Common Internet File System (CIFS)`
+- [ ] setcifsacl `Userspace helper to alter an ACL in a security descriptor for Common Internet File System (CIFS)`
+- [ ] smbcquotas `Set or get QUOTAs of NTFS 5 shares`
+- [ ] cifsiostat `Report CIFS statistics`
+- [ ] smbget `wget-like utility for download files over SMB`
+- [ ] smbtar `shell script for backing up SMB/CIFS shares directly to UNIX tape drives`
  
 
 ### 304.3 Windows Clients (weight: 3)
