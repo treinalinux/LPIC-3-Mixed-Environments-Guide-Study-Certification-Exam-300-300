@@ -676,6 +676,110 @@ Candidates should be able to access CIFS and print shares from Windows hosts and
 
 - [ ] net (Windows command; including all relevant subcommands)
 - [ ] samba-tool gpo (including all relevant subcommands)
+
+    - **gpo**
+        Manage Group Policy Objects (GPO).
+
+    - **gpo create displayname [options]**
+        Create an empty GPO.
+
+    - **gpo del gpo [options]**
+        Delete GPO.
+
+    - **gpo dellink container_dn gpo [options]**
+        Delete GPO link from a container.
+
+    - **gpo fetch gpo [options]**
+        Download a GPO.
+
+    - **gpo getinheritance container_dn [options]**
+        Get inheritance flag for a container.
+
+    - **gpo getlink container_dn [options]**
+        List GPO Links for a container.
+
+    - **gpo list username [options]**
+        List GPOs for an account.
+
+    - **gpo listall**
+        List all GPOs.
+
+    - **gpo listcontainers gpo [options]**
+        List all linked containers for a GPO.
+
+    - **gpo setinheritance container_dn block|inherit [options]**
+        Set inheritance flag on a container.
+
+    - **gpo setlink container_dn gpo [options]**
+        Add or Update a GPO link to a container.
+
+    - **gpo show gpo [options]**
+        Show information for a GPO.
+
+    - **gpo manage symlink list**
+        List VGP Symbolic Link Group Policy from the sysvol
+
+    - **gpo manage symlink add**
+        Adds a VGP Symbolic Link Group Policy to the sysvol
+
+    - **gpo manage symlink remove**
+        Removes a VGP Symbolic Link Group Policy from the sysvol
+
+    - **gpo manage files list**
+        List VGP Files Group Policy from the sysvol
+
+    - **gpo manage files add**
+        Add VGP Files Group Policy to the sysvol
+
+    - **gpo manage files remove**
+        Remove VGP Files Group Policy from the sysvol
+
+    - **gpo manage openssh list**
+        List VGP OpenSSH Group Policy from the sysvol
+
+    - **gpo manage openssh set**
+        Sets a VGP OpenSSH Group Policy to the sysvol
+
+    - **gpo manage sudoers add**
+        Adds a Samba Sudoers Group Policy to the sysvol.
+
+    - **gpo manage sudoers list**
+        List Samba Sudoers Group Policy from the sysvol.
+
+    - **gpo manage sudoers remove**
+        Removes a Samba Sudoers Group Policy from the sysvol.
+
+    - **gpo manage scripts startup list**
+        List VGP Startup Script Group Policy from the sysvol
+
+    - **gpo manage scripts startup add**
+        Adds VGP Startup Script Group Policy to the sysvol
+
+    - **gpo manage scripts startup remove**
+        Removes VGP Startup Script Group Policy from the sysvol
+
+    - **gpo manage motd list**
+        List VGP MOTD Group Policy from the sysvol.
+
+    - **gpo manage motd set**
+        Sets a VGP MOTD Group Policy to the sysvol
+
+    - **gpo manage issue list**
+        List VGP Issue Group Policy from the sysvol.
+
+    - **gpo manage issue set**
+        Sets a VGP Issue Group Policy to the sysvol
+
+    - **gpo manage access add**
+        Adds a VGP Host Access Group Policy to the sysvol
+
+    - **gpo manage access list**
+        List VGP Host Access Group Policy from the sysvol
+
+    - **gpo manage access remove**
+        Remove a VGP Host Access Group Policy from the sysvol
+
+
 - [ ] gpupdate (Windows command)
 - [ ] rdesktop
  
