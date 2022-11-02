@@ -189,21 +189,38 @@ Candidates should be able to analyze and troubleshoot Samba issues. This include
     - [ ] debuglevel
 
 - [ ] /var/log/samba/
-- [ ] smbpasswd
-- [ ] pdbedit
+- [ ] smbpasswd `The Samba encrypted password file | change a user's SMB password`
+- [ ] pdbedit `manage the SAM database (Database of Samba Users)`
 - [ ] registry.tdb
 - [ ] secrets.tdb
-- [ ] tdbdump
-- [ ] tdbtool
-- [ ] ldbsearch
-- [ ] ldbmodify
-- [ ] ldbedit
-- [ ] ldbadd
-- [ ] ldbdel
-- [ ] LDIF
-- [ ] samba-tool dbcheck
+- [ ] tdbdump `tool for printing the contents of a TDB file`
+- [ ] tdbtool `manipulate the contents TDB files`
+- [ ] ldbsearch `Search for records in a LDB database`
+- [ ] ldbmodify `Modify records in a LDB database`
+- [ ] ldbedit `Edit LDB databases using your preferred editor`
+- [ ] ldbadd `Command-line utility for adding records to an LDB`
+- [ ] ldbdel ` Command-line program for deleting LDB records`
+- [ ] LDIF `LDAP Data Interchange Format`
+- [ ] samba-tool dbcheck `Check the local AD database for errors`
 - [ ] samba-tool domain backup (including relevant subcommands)
-- [ ] rpcclient
+
+    - **domain backup**
+        Create or restore a backup of the domain.
+
+    - **domain backup offline**
+        Backup (with proper locking) local domain directories into a tar file.
+
+    - **domain backup online**
+        Copy a running DC's current DB into a backup tar file.
+
+    - **domain backup rename**
+        Copy a running DC's DB to backup file, renaming the domain in the process.
+
+    - **domain backup restore**
+        Restore the domain's DB from a backup-file.
+
+
+- [ ] rpcclient `tool for executing client side MS-RPC functions`
  
 
 ## Topic 302: Samba and Active Directory Domains
