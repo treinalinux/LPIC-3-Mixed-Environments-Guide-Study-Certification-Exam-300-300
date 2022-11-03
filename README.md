@@ -580,8 +580,8 @@ Candidates should be able to create and manage local user accounts on a stand al
 - [ ] /etc/passwd
 - [ ] /etc/group
 - [ ] pam_smbpass.so
-- [ ] smbpasswd
-- [ ] pdbedit
+- [ ] smbpasswd `The Samba encrypted password file | change a user's SMB password`
+- [ ] pdbedit `manage the SAM database (Database of Samba Users)`
  
 
 ## Topic 303: Samba Share Configuration
@@ -629,7 +629,7 @@ Candidates should be able to create and configure CIFS file shares in Samba.
 
 - [ ] [homes]
 - [ ] [IPC$]
-- [ ] smbcquotas
+- [ ] smbcquotas `Set or get QUOTAs of NTFS 5 shares`
  
 
 ### 303.2 File Share Security (weight: 3)
@@ -666,18 +666,64 @@ Candidates should understand file permissions on CIFS shares and on a Linux file
     - [ ] vfs objects
     - [ ] smb encrypt
 
-- [ ] chown
-- [ ] chmod
-- [ ] getfacl
-- [ ] setfacl
-- [ ] getfattr
-- [ ] smbcacls
-- [ ] sharesec
-- [ ] SeDiskOperatorPrivilege
-- [ ] vfs_acl_xattr
-- [ ] vfs_acl_tdb
-- [ ] samba-tool ntacl (including subcommands)
- 
+- [ ] chown `change file owner and group`
+- [ ] chmod `change file mode bits`
+- [ ] getfacl `get file access control lists`
+- [ ] setfacl `set file access control lists`
+- [ ] getfattr `get extended attributes of filesystem objects`
+- [ ] smbcacls `Set or get ACLs on an NT file or directory names`
+- [ ] sharesec `Set or get share ACLs`
+- [ ] SeDiskOperatorPrivilege ``
+- [ ] vfs_acl_xattr ``
+- [ ] vfs_acl_tdb ``
+- [ ] samba-tool ntacl (including subcommands) ``
+
+    - **ntacl**
+        Manage NT ACLs.
+
+    - **ntacl changedomsid original-domain-SID new-domain-SID file [options]**
+        Change the domain SID for ACLs. Can be used to change all entries in acl_xattr when the machine's SID has
+        accidentally changed or the data set has been copied to another machine either via backup/restore or rsync.
+
+        --use-ntvfs
+            Set the ACLs directly to the TDB or xattr. The POSIX permissions will NOT be changed, only the NT ACL will be
+            stored.
+
+        --service=SERVICE
+            Specify the name of the smb.conf service to use. This option is required in combination with the --use-s3fs
+            option.
+
+        --use-s3fs
+            Set the ACLs for use with the default s3fs file server via the VFS layer. This option requires a smb.conf
+            service, specified by the --service=SERVICE option.
+
+        --xattr-backend=[native|tdb]
+            Specify the xattr backend type (native fs or tdb).
+
+        --eadb-file=EADB_FILE
+            Name of the tdb file where attributes are stored.
+
+        --recursive
+            Set the ACLs for directories and their contents recursively.
+
+        --follow-symlinks
+            Follow symlinks when --recursive is specified.
+
+        --verbose
+            Verbosely list files and ACLs which are being processed.
+
+    - **ntacl get file [options]**
+        Get ACLs on a file.
+
+    - **ntacl set acl file [options]**
+        Set ACLs on a file.
+
+    - **ntacl sysvolcheck**
+        Check sysvol ACLs match defaults (including correct ACLs on GPOs).
+
+    - **ntacl sysvolreset**
+        Reset sysvol ACLs to defaults (including correct ACLs on GPOs).
+
 
 ### 303.3 DFS Share Configuration (weight: 1)
 
