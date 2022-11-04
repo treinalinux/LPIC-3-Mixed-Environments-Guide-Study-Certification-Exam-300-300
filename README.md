@@ -65,7 +65,7 @@ Candidates should understand the essential concepts of Samba, including the vari
 
 - [ ] Understand the roles of the various Samba daemons and components
 - [ ] Understand key issues regarding heterogeneous networks
-- [ ] Understand the networking services used with SMB/CIFS and Active Directory, including their ports
+- [ ] Understand the networking services used with SMB/[CIFS](https://www.samba.org/cifs/) and Active Directory, including their ports
 - [ ] Understand the major features of SMB protocol versions 1.0, 2.0, 2.1 and 3.0
 - [ ] Understand of Samba 3 and Samba 4 differences
 - [ ] [Awareness of Samba VFS modules](https://wiki.samba.org/index.php/Virtual_File_System_Modules#Developing_VFS_Modules)
@@ -149,14 +149,14 @@ Candidates should know the various tools and utilities that are part of a Samba 
 
 **The following is a partial list of the used files, terms and utilities**:
 
-- [ ] systemctl
-- [ ] smbcontrol (including relevant message types)
+- [ ] **systemctl**
+- [ ] **smbcontrol** (including relevant message types)
     - smbcontrol - send messages to smbd, nmbd or winbindd processes
 
-- [ ] smbstatus `report on current Samba connections`
-- [ ] tdbbackup `tool for backing up and for validating the integrity of samba .tdb files`
-- [ ] tdbrestore `tool for creating a TDB file out of a tdbdump output`
-- [ ] samba-tool domain backup (including subcommands)
+- [ ] **smbstatus** `report on current Samba connections`
+- [ ] **tdbbackup** `tool for backing up and for validating the integrity of samba .tdb files`
+- [ ] **tdbrestore** `tool for creating a TDB file out of a tdbdump output`
+- [ ] **samba-tool domain backup** `(including subcommands)`
 - [ ] Virtual Machine Generation Identifier
 - [ ] Virtual Machine Snapshots
  
@@ -186,25 +186,25 @@ Candidates should be able to analyze and troubleshoot Samba issues. This include
 
 **The following is a partial list of the used files, terms and utilities**:
 
-- [ ] smb.conf:
-    - [ ] log level
-    - [ ] debuglevel
+- [ ] **smb.conf**:
+    - [ ] **log level**
+    - [ ] **debuglevel**
 
 - [ ] /var/log/samba/
-- [ ] smbpasswd `The Samba encrypted password file | change a user's SMB password`
-- [ ] pdbedit `manage the SAM database (Database of Samba Users)`
-- [ ] registry.tdb
-- [ ] secrets.tdb
-- [ ] tdbdump `tool for printing the contents of a TDB file`
-- [ ] tdbtool `manipulate the contents TDB files`
-- [ ] ldbsearch `Search for records in a LDB database`
-- [ ] ldbmodify `Modify records in a LDB database`
-- [ ] ldbedit `Edit LDB databases using your preferred editor`
-- [ ] ldbadd `Command-line utility for adding records to an LDB`
-- [ ] ldbdel ` Command-line program for deleting LDB records`
-- [ ] LDIF `LDAP Data Interchange Format`
-- [ ] samba-tool dbcheck `Check the local AD database for errors`
-- [ ] samba-tool domain backup (including relevant subcommands)
+- [ ] **smbpasswd** `The Samba encrypted password file | change a user's SMB password`
+- [ ] **pdbedit** `manage the SAM database (Database of Samba Users)`
+- [ ] **registry.tdb**
+- [ ] **secrets.tdb**
+- [ ] **tdbdump** `tool for printing the contents of a TDB file`
+- [ ] **tdbtool** `manipulate the contents TDB files`
+- [ ] **ldbsearch** `Search for records in a LDB database`
+- [ ] **ldbmodify** `Modify records in a LDB database`
+- [ ] **ldbedit** `Edit LDB databases using your preferred editor`
+- [ ] **ldbadd** `Command-line utility for adding records to an LDB`
+- [ ] **ldbdel** ` Command-line program for deleting LDB records`
+- [ ] **LDIF** `LDAP Data Interchange Format`
+- [ ] **samba-tool dbcheck** `Check the local AD database for errors`
+- [ ] **samba-tool domain backup** `(including relevant subcommands)`
 
     - **domain backup**
         Create or restore a backup of the domain.
@@ -222,7 +222,7 @@ Candidates should be able to analyze and troubleshoot Samba issues. This include
         Restore the domain's DB from a backup-file.
 
 
-- [ ] rpcclient `tool for executing client side MS-RPC functions`
+- [ ] **rpcclient** `tool for executing client side MS-RPC functions`
  
 
 ## Topic 302: Samba and Active Directory Domains
