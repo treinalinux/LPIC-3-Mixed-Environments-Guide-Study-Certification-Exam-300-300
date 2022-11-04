@@ -438,10 +438,10 @@ Candidates should be familiar with the internal DNS server of Samba.
     - [ ] allow dns updates
     - [ ] multicst dns register
 
-- [ ] samba-tool dns (with subcommands)
-- [ ] samba_dnsupdate
-- [ ] dig
-- [ ] host
+- [ ] **samba-tool dns** `(with subcommands)`
+- [ ] **samba_dnsupdate**
+- [ ] **dig**
+- [ ] **host**
 - [ ] /etc/resolv.conf
  
 
@@ -475,15 +475,15 @@ Candidates should be able to manage user and group accounts on a standalone serv
 
 **The following is a partial list of the used files, terms and utilities**:
 
-- [ ] samba-tool user (including relevant subcommands)
-- [ ] samba-tool group (including relevant subcommands)
-- [ ] samba-tool domain passwordsettings
-- [ ] samba-tool domain exportkeytab
-- [ ] samba-tool spn (including relevant subcommands)
-- [ ] smbpasswd
-- [ ] pdbedit
-- [ ] kinit
-- [ ] klist
+- [ ] **samba-tool user** `(including relevant subcommands)`
+- [ ] **samba-tool group** `(including relevant subcommands)`
+- [ ] **samba-tool domain passwordsettings**
+- [ ] **samba-tool domain exportkeytab**
+- [ ] **samba-tool spn** `(including relevant subcommands)`
+- [ ] **smbpasswd**
+- [ ] **pdbedit**
+- [ ] **kinit**
+- [ ] **klist**
  
 
 ### 302.4 Samba Domain Membership (weight: 4)
