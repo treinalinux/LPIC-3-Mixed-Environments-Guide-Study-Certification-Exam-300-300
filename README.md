@@ -68,16 +68,16 @@ Candidates should understand the essential concepts of Samba, including the vari
 - [ ] Understand the networking services used with SMB/CIFS and Active Directory, including their ports
 - [ ] Understand the major features of SMB protocol versions 1.0, 2.0, 2.1 and 3.0
 - [ ] Understand of Samba 3 and Samba 4 differences
-- [ ] Awareness of Samba VFS modules
+- [ ] [Awareness of Samba VFS modules](https://wiki.samba.org/index.php/Virtual_File_System_Modules#Developing_VFS_Modules)
 - [ ] Awareness of Samba Clustering and CTDB
 
 
 Partial list of the used files, terms and utilities:
 
-- [ ] smbd
-- [ ] nmbd
-- [ ] samba
-- [ ] winbindd
+- [ ] smbd `Server to provide SMB/CIFS services to clients`
+- [ ] nmbd `NetBIOS name server to provide NetBIOS over IP naming services to clients`
+- [ ] samba `A Windows AD and SMB/CIFS fileserver for UNIX | Server to provide AD and SMB/CIFS services to clients`
+- [ ] winbindd `Name Service Switch daemon for resolving names from NT servers`
 
 
 ### 301.2 Samba Configuration (weight: 4)
@@ -151,9 +151,11 @@ Candidates should know the various tools and utilities that are part of a Samba 
 
 - [ ] systemctl
 - [ ] smbcontrol (including relevant message types)
-- [ ] smbstatus
-- [ ] tdbbackup
-- [ ] tdbrestore
+    - smbcontrol - send messages to smbd, nmbd or winbindd processes
+
+- [ ] smbstatus `report on current Samba connections`
+- [ ] tdbbackup `tool for backing up and for validating the integrity of samba .tdb files`
+- [ ] tdbrestore `tool for creating a TDB file out of a tdbdump output`
 - [ ] samba-tool domain backup (including subcommands)
 - [ ] Virtual Machine Generation Identifier
 - [ ] Virtual Machine Snapshots
@@ -821,9 +823,9 @@ Candidates should be familiar with management and authentication of user account
 - [ ] pam_krb5.so
 - [ ] pam_cracklib.so
 - [ ] pam_tally2.so
-- [ ] pam_faillock.so
-- [ ] pam_mkhomedir.so
-- [ ] chage
+- [ ] pam_faillock.so `Module counting authentication failures during a specified interval`
+- [ ] pam_mkhomedir.so `pam_mkhomedir - PAM module to create users home directory`
+- [ ] chage `change user password expiry information`
 - [ ] faillog
 - [ ] sssd
 - [ ] sssd.conf
@@ -832,7 +834,7 @@ Candidates should be familiar with management and authentication of user account
 - [ ] sss_debuglevel
 - [ ] sss_user* and sss_group*
 - [ ] /var/lib/sss/db/
-- [ ] krb5.conf
+- [ ] krb5.conf `Kerberos configuration file`
 - [ ] kinit
 - [ ] klist
 - [ ] kdestroy
