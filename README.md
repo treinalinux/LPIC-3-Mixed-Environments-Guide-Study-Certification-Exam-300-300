@@ -74,10 +74,10 @@ Candidates should understand the essential concepts of Samba, including the vari
 
 Partial list of the used files, terms and utilities:
 
-- [ ] smbd `Server to provide SMB/CIFS services to clients`
-- [ ] nmbd `NetBIOS name server to provide NetBIOS over IP naming services to clients`
-- [ ] samba `A Windows AD and SMB/CIFS fileserver for UNIX | Server to provide AD and SMB/CIFS services to clients`
-- [ ] winbindd `Name Service Switch daemon for resolving names from NT servers`
+- [ ] **smbd** `Server to provide SMB/CIFS services to clients`
+- [ ] **nmbd** `NetBIOS name server to provide NetBIOS over IP naming services to clients`
+- [ ] **samba** `A Windows AD and SMB/CIFS fileserver for UNIX | Server to provide AD and SMB/CIFS services to clients`
+- [ ] **winbindd** `Name Service Switch daemon for resolving names from NT servers`
 
 
 ### 301.2 Samba Configuration (weight: 4)
